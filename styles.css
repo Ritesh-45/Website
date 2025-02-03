@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width:100%;
+    height: auto;
+}
+body{
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.navbar{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul li{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+nav ul li a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    padding: 1em 2em;
+    border-radius: 2.5em;
+}
+nav ul li a:hover{
+    box-shadow: 0 0 10px cyan, 0 0 10px cyan, 0 0 10px cyan;;
+}
+.data_section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+}
+.left, .right{
+    flex: 1;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.left{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    justify-content: center;
+    align-items: center;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /*border: 1px solid white;*/
+}
+.photo{
+    margin-top: 10px;
+    padding-top: 10px;
+
+}
+.my_image{
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 0 10px cyan, 
+                0 0 10px cyan, 
+                0 0 10px cyan;
+}
+.contacts{
+    padding: 0 10 0 10px;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
+.contacts p{
+    color: white;
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.links a{
+    width: 30px;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.linkedin, .github, .instagram, .facebook{
+    width: 30px;
+    height: 30px;
+}
+
+
+.right{
+    flex: 7;
+    justify-content: center;
+}
+.main1{
+    display: float;
+    padding-left: 10px;
+    padding-left: 10px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 
+                0 0 10px rgba(0, 0, 0, 0.3), 
+                0 0 10px rgba(0, 0, 0, 0.3);
+    
+}
+.Name{
+    width: auto;
+    height: auto;
+    color: white;
+    font-size: 60px;
+    font-weight: 100;
+}
+.Description{
+    padding-top: 30px;
+    font-size: 25px;
+    color: white;
+}
+
+.main2{
+    height: 502px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 
+                0 0 10px rgba(0, 0, 0, 0.3), 
+                0 0 10px rgba(0, 0, 0, 0.3);
+}
+.main2 h1{
+    color: white;
+    font-size: 60px;
+    text-shadow: 0 0 10px cyan, 
+                0 0 10px cyan, 
+                0 0 10px cyan;
+}
+
+
+
+
+
+@media (max-width:430px) { /*for mobile devices*/
+    .navbar{
+        width: 100%;
+        height: auto;
+        background-color: black;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 0;
+    }
+    nav ul{
+        list-style: none;
+        display: flex;
+        justify-content:center;
+    }
+    nav ul li{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    nav ul li a{
+        display: flex;
+        text-decoration: none;
+        color: white;
+        padding: 1em 2em;
+        border-radius: 2.5em;
+    }
+    nav ul li a:hover{
+        box-shadow: 0 0 10px cyan, 0 0 10px cyan, 0 0 10px cyan;;
+    }
+    .data_section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .left{
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .photo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 2;
+    }
+    .my_image{
+        width: 116px;
+        height: 166px;
+    }
+    .deta{
+        display: flex;
+        flex: 3;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 15px;
+    }
+    .contacts{
+        padding: 0 10 0 10px;
+        display:flex;
+        justify-content: center;
+        text-align: center;
+
+    }
+    .contacts p{
+        color: white;
+        margin-top: 10px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .links a{
+        width: 20px;
+        height: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .linkedin, .github, .instagram, .facebook{
+        width: 20px;
+        height: 20px;
+    }
+
+    .main1{
+        margin: 5px 5px 5px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .name{
+        display: flex;
+        flex-direction: column;
+        border-radius: 25px;
+        background-color: rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 
+                0 0 10px rgba(0, 0, 0, 0.3), 
+                0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    .Name{
+        color: White;
+        font-size: 20px;
+        font-weight: 100;
+        margin-bottom: 0;
+    }
+    .Description{
+        color: white;
+        font-size: 13.5px;
+        padding-top: 10px;
+    }
+    .right{
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+    }
+    .main2{
+        margin: 5px 5px 5px 5px;
+        display: flex;
+        justify-content: center;
+        height: 350px;
+        align-items: center;
+        border-radius: 25px;
+        background-color: rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 
+                0 0 10px rgba(0, 0, 0, 0.3), 
+                0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    .main2 h1{
+        color: white;
+    font-size: 30px;
+    text-shadow: 0 0 10px cyan, 
+                0 0 10px cyan, 
+                0 0 10px cyan;
+    }
+}
